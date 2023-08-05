@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Mentoria</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="page">
+    
+    <header>
+      
+      <h1>avalie a sua mentoria</h1>
+      <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+      
+      <figure>
+        <img id="img-evaluation" src="/images/img1.svg" alt="opção de avaliação">
+      </figure>
+      
+      <div class="top">
+        <legend>INFORMAÇÕES PESSOAIS</legend>
+      </div>
+    </header>
+
+    <form id="my-form" action="">
+      
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <div class="fieldset-nomeCompleto">
+                <div class="input-wrapper">
+                  <label for="event-nome">Nome</label>
+                  <input type="text" id="event-nome" required>
+                </div>
+      
+                <div class="input-wrapper">
+                  <label for="event-sobrenome">Sobrenome</label>
+                  <input type="text" id="event-sobrenome" required>
+                </div>
+            </div>
+        
+            <div class="input-wrapper">
+              <label for="event-email">Email <span>(digite um email válido)</span></label>
+              <input type="text" id="event-email" required>
+            </div>
+
+          </div>
+        </fieldset>
+
+        
+
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>INFORMAÇÕES DO MENTOR</legend>
+
+              <label for="event-option">Selecione quem foi o seu mentor</label>
+              <select name="" id="event-option">
+                <option value="#">Favor, escolha uma opção</option>
+                <option value="">João</option>
+                <option value="">Fernando</option>
+                <option value="">Mário</option>
+              </select>
+
+            <div class="input-wrapper">
+              <label for="event-textArea">Feedback sobre o mentor</label>
+              <textarea name="" id="event-textArea" minlength="150"></textarea>
+            </div>
+
+            <div class="checkbox-wrapper">
+              <input type="checkbox" id="event-approved">
+              <label for="event-approved">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+            </div>
+
+          </div>
+          
+        </fieldset>
+
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>AGENDANDO PRÓXIMA MENTORIA</legend>
+              
+            <div class="agendamento">
+              <div class="input-wrapper">
+                <label for="event-date">Data<span> (DD/MM/AAAA)</span></label>
+                <input type="date" id="event-date" required>
+              </div>
+    
+              <div class="input-wrapper">
+                <label for="event-begin">Das</label>
+                <input type="time" id="event-begin" required>
+              </div>
+    
+              <div class="input-wrapper">
+                <label for="event-end">Até</label>
+                <input type="time" id="event-end" required>
+              </div>
+
+            </div>
+            
+            
+          </div>
+        </fieldset>
+
+      <input class="submitButton" type="submit" value="SALVAR">
+
+    </form>
+
+  </div>
+</body>
+</html>
